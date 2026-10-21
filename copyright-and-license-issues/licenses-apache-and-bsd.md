@@ -11,8 +11,7 @@ are, including Apache-2.0 and BSD-3-Clause:
 
 + https://spdx.org/licenses
 
-| Python program A  |  ... imports Python     |          |
-| with license      |  package B with license | Allowed? |
+| Program A with license ... | ... imports/includes code B with license ... |          |
 | ----------------- | ----------------------- | -------- |
 | Apache-2.0        | Apache-2.0              | yes, same licenses |
 | BSD-3-Clause      | BSD-3-Clause            | yes, same licenses |
