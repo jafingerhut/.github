@@ -18,8 +18,7 @@ are, including Apache-2.0 and GPL-2.0-only:
 
 + https://spdx.org/licenses
 
-| Python program A  |  ... imports Python     |          |
-| with license      |  package B with license | Allowed? |
+| Program A with license ... | ... imports/includes code B with license ... | Allowed? |
 | ----------------- | ----------------------- | -------- |
 | Apache-2.0        | Apache-2.0              | yes, same licenses |
 | GPL-2.0-only      | GPL-2.0-only            | yes, same licenses |
