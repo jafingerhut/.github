@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 # Compatibility of BSD and Apache 2.0 licenses
 
-Reference for what the SPDX-License-Identifer possible string values
+Reference for what the SPDX-License-Identifier possible string values
 are, including Apache-2.0 and BSD-3-Clause:
 
 + https://spdx.org/licenses
@@ -17,7 +17,7 @@ are, including Apache-2.0 and BSD-3-Clause:
 | Apache-2.0        | Apache-2.0              | yes, same licenses |
 | BSD-3-Clause      | BSD-3-Clause            | yes, same licenses |
 | Apache-2.0        | BSD-3-Clause            | yes, if released as Apache-2.0 |
-| BSD-3-Clause      | Apache-2.0              | yes, if released as Apache-2.0 |
+| BSD-3-Clause      | Apache-2.0              | yes, but only if program A is changed to be released with Apache-2.0 license |
 
 
 # Open Source Automation Development Lab (OSADL)
@@ -52,7 +52,7 @@ combined work can be released under the Apache-2.0 license.
 
 [1] https://osadl.org
 
-[2] "OASDL license compatibility matrix with explanations",
+[2] "OSADL license compatibility matrix with explanations",
     https://www.osadl.org/html/CompatMatrix.html
 
 [3] David A. Wheeler, "The Free-Libre / Open Source Software (FLOSS)

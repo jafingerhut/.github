@@ -30,9 +30,11 @@ the file.  You may also find this article useful:
 Did you use AI tools to write the file?  If yes, you should find
 documentation for that AI tool that describes what your choices are
 regarding the legal entity that is the copyright holder of that file.
+See The P4 Language Consortium's [AI policy](../AIPOLICY.md) for more
+information.
 
 Important aside: This might not be as easy as it sounds.  It is an
-active area of legal consideration who the copyright holder of such
+active area of legal consideration who the copyright holders of such
 AI-generated files are.  In some countries (e.g. the USA), if no
 person contributes significantly to the content of a file, it _cannot_
 have a copyright holder at all, should likely be considered part of
@@ -47,7 +49,7 @@ there are one or more copyright notices in the file already.  You
 _MUST NOT_ remove these copyright notices, because you are not the
 copyright holder -- they are.  Hopefully the file already contains a
 license annotation as well, or the project that you copied the file
-from has an overall license published for it.  you _MUST NOT_ change
+from has an overall license published for it.  You _MUST NOT_ change
 these license annotations, because you are not the copyright holder.
 If that license is Apache-2.0, or one of a short list of other
 licenses that are compatible in combining in the same executable with
@@ -55,7 +57,7 @@ Apache-2.0 licensed code (e.g. BSD-2-Clause, BSD-3-Clause, MIT,
 FSFAP), then it is fine to add it to a p4lang repository.  If it is
 any copyleft license (e.g. GPL-2.0-only, GPL-3.0-only), then see the
 [Copyleft
-licenses](#exceptions-to-using-apache-2.0---copyleft-licenses) section
+licenses](#exceptions-to-using-apache-20---copyleft-licenses) section
 below.
 
 Did you write the file completely or mostly by your own efforts?
@@ -107,7 +109,7 @@ modifying the file is a legally defensible choice.
 
 # Determining the license
 
-If you as an indidividual are the copyright holder, then you can
+If you as an individual are the copyright holder, then you can
 choose the license you wish to release the file under.  You even have
 the legal option to choose to release the file under different
 licenses in different projects.
@@ -152,7 +154,7 @@ FSFAP licenses.  To the best of our knowledge, it is [legally
 acceptable](licenses-apache-and-bsd.md) to link such code with
 executable binaries that are released under the Apache-2.0 license.
 Many libraries whose source code has been copied into p4lang
-repositories have one of these license.  They are often within a
+repositories have one of these licenses.  They are often within a
 directory called `third-party` or `third_party`.
 
 
@@ -171,8 +173,8 @@ environment, and you already know what you should be using instead of
 the command above.
 
 Once the REUSE package is installed, you can use it to add copyright
-and licnese annotations to most source code files that following
-common file name conventions using a command like the following:
+and license annotations to most source code files that follow
+common file name conventions using a command like this:
 ```sh
 reuse annotate -c "the copyright holder" -y 2026 -l Apache-2.0 <path-to-source-file>
 ```

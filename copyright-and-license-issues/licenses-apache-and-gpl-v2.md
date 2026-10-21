@@ -9,8 +9,9 @@ SPDX-License-Identifier: Apache-2.0
 Please suggest additional references, whether they argue for
 compatibility or incompatbility of these two software licenses.  They
 need not _settle_ the question authoritatively.  The point of this
-article as of 2025 is that the question of their compatibilty seems
-not to be settled yet.
+article is that the question of their compatibility seems not to be
+settled yet (at least not as of 2026 when this article was last
+updated).
 
 Reference for what the SPDX-License-Identifer possible string values
 are, including Apache-2.0 and GPL-2.0-only:
@@ -94,15 +95,15 @@ think those patent clauses are good, I made GPL version 3 compatible
 with them." [4]
 
 The above was written by Richard Stallman, who often speaks for the
-FSF, but I do not know whether the FSF specifically endorses the legal
-interpretations in the quoted paragraph above.  It is published on the
-gnu.org site quite prominently, though.
+FSF, but we do not know whether the FSF specifically endorses the
+legal interpretations in the quoted paragraph above.  It is published
+on the gnu.org site quite prominently, though.
 
 
 # Randomly found StackExchange discussion
 
-See [3].  I don't claim anything in there as authoritative, but it
-might have useful links that lead to more authoritiatve information.
+See [3].  We do not claim anything in there as authoritative, but it
+might have useful links that lead to more authoritative information.
 
 
 # References

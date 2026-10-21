@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 The P4 Language Consortium
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Introduction
 
 This article records the company where selected p4lang contributors
@@ -30,7 +36,7 @@ Source: https://mihaibudiu.github.io/work/index.html retrieved on 2026-Jun-27
 + 2016-Jun until 2023: VMware, Inc.
 + 2023 to present: Feldera Inc.
 
-PR that followed these dates, approved by Mihai;
+PR that followed these dates, approved by Mihai:
 https://github.com/p4lang/p4c/pull/5634
 
 
@@ -52,7 +58,7 @@ Source: https://www.linkedin.com/in/cascaval/ retrieved on 2026-Jun-27
 + 2016-Sep until 2019-Jul: Barefoot Networks, Inc. (acquired by Intel)
 + 2019-Jul until 2020-Feb: Intel Corporation
 
-PR that followed these dates, privately approved of by Calin in an
+PR that followed these dates, privately approved by Calin in an
 email sent to Andy Fingerhut in 2026:
 https://github.com/p4lang/p4c/pull/5624
 
@@ -65,7 +71,7 @@ Source: https://www.linkedin.com/in/chris-dodd-392a28/ retrieved 2026-Jun-27
 + 2019-Jul until 2023-Nov: Intel Corporation
 + 2023-Nov to present: Nvidia Corporation
 
-PR that followed these dates, approved by Chris;
+PR that followed these dates, approved by Chris:
 https://github.com/p4lang/p4c/pull/5623
 
 
@@ -74,11 +80,12 @@ https://github.com/p4lang/p4c/pull/5623
 Source: https://www.linkedin.com/in/andy-fingerhut-8ab969/ retrieved 2026-Jun-27
 
 + 2011-May until 2020-Jun: Cisco Systems, Inc.
-+ 2020-Jun until 2023-Dec; Intel Corporation
++ 2020-Jun until 2023-Dec: Intel Corporation
 + 2023-Dec until 2024-Feb: Independent
-+ 2024-Mar until present: Cisco Systems, Inc.
++ 2024-Mar until 2026-Jul: Cisco Systems, Inc.
++ 2026-Jul until present: Independent
 
-PR that followed these dates, created by Andy;
+PR that followed these dates, created by Andy:
 https://github.com/p4lang/p4c/pull/5620
 
 
@@ -118,7 +125,7 @@ For the p4lang/p4c repository, Fabian suggested these rules:
 + If the file was added by github account fruffy-bfn, the copyright holder is Intel Corporation.
 + If the file was added by github account fruffy, the copyright holder is The P4 Language Consortium.
 
-PR that followed these guidelines, approved by Fabian;
+PR that followed these guidelines, approved by Fabian:
 https://github.com/p4lang/p4c/pull/5630
 
 
@@ -129,7 +136,7 @@ Source: https://www.linkedin.com/in/sosutha-s-a3841048/ retrieved on 2026-Jun-27
 + 2020-May until 2024-Nov: Intel Corporation
 + 2024-Nov until present: Marvell Technology, Inc.
 
-PR that followed these dates, approved by Sosutha;
+PR that followed these dates, approved by Sosutha:
 https://github.com/p4lang/p4c/pull/5625
 
 
@@ -141,5 +148,5 @@ Source: https://www.linkedin.com/in/hanwang0/ retrieved 2026-Jun-27
 + 2019-Jul until 2024-Oct: Intel Corporation
 + 2024-Oct until present: Advanced Micro Devices, Inc.
 
-PR that followed these dates, approved by Han;
+PR that followed these dates, approved by Han:
 https://github.com/p4lang/p4c/pull/5621

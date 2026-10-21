@@ -60,15 +60,20 @@ currently import both the scapy and ptf packages, including these:
 # What could we do about this?
 
 One possibility _might_ be to change the license of ptf so that it is
-multi-licensed [1], i.e. it can be used either as the Apache-2.0
+multi-licensed [3], i.e. it can be used either as the Apache-2.0
 license, or GPL v2, at the choice of the user.
 
 Then in the cases where someone writes a program A that imports both
-scapy and ptf in in A, they can choose to use ptf under the GPL v2
+scapy and ptf in A, they can choose to use ptf under the GPL v2
 license, and also release program A under the GPL v2 license.
 
 In cases where they write a program A that imports ptf, but not scapy,
 then they have a choice whether to publish program A under the GPL v2
 license, or the Apache-2.0 license.
 
-[1] https://en.wikipedia.org/wiki/Multi-licensing
+[3] https://en.wikipedia.org/wiki/Multi-licensing
+
+Note that changing the ptf license in this way (or any other way)
+would require agreement from all copyright holders of the affected ptf
+source files, or replacing any files for which such agreement is not
+given.

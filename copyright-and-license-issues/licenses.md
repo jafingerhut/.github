@@ -40,7 +40,7 @@ REUSE-IgnoreStart
 -->
 These look like the following examples, where the syntax of everything
 _except_ the comment indicator is required by SPDX, i.e. there is a
-precise specified syntax for ethe "SPDX-License-Identifier:"
+precisely specified syntax for the "SPDX-License-Identifier:"
 characters to be present, and exactly what sequence of characters may
 follow it on the line.
 
@@ -107,9 +107,9 @@ legal ground](licenses-apache-and-gpl-v2.md) by releasing all Python
 source files meeting the following conditions under the GPL v2.0
 license:
 
-(a) files that directly import the `scapy` package
-(b) files that indirectly import the Scapy package, by importing a
-    package that imports Scapy
++ files that directly import the `scapy` package
++ files that indirectly import the Scapy package, by importing a
+  package that imports Scapy
 
 We believe that this should not be a significant hindrance to those
 who wish to distribute proprietary P4 compiler executables, because
@@ -139,6 +139,7 @@ intended to be compiled and loaded into the kernel via the EBPF
 feature, at least [3], [4] and perhaps others.
 
 [3] https://github.com/p4lang/p4c/blob/main/backends/ebpf/README.md
+
 [4] https://github.com/p4lang/p4c/blob/main/backends/tc/README.md
 
 While there are a few examples of companies releasing binaries of
@@ -146,8 +147,8 @@ Linux driver code for their hardware and not releasing the source
 code, we leave it to their legal teams to navigate any of the
 intricacies that may be involved in that endeavor.
 
-[5] is a good introduction to software licensing questions related to
-using EBPF.
+Reference [5] is a good introduction to software licensing questions
+related to using EBPF.
 
 [5] https://ebpf.io/blog/ebpf-licensing-guide/
 
@@ -167,11 +168,11 @@ loss of competitive advantage to publicize it.
 Thus our plan is to release all of the following kinds of source files
 under the GPL v2.0 license, the same as the Linux kernel:
 
-(a) files that are intended to be compiled and loaded into the kernel
-    via EBPF.
-(b) header files included from files in category (a).
++ files that are intended to be compiled and loaded into the kernel
+  via EBPF.
++ header files included from files described in the previous item
 
-Note that this list of files appear to consist of _only_ 2 source
+Note that this list of files appears to consist of _only_ 2 source
 files in the entire p4c repository.  Most of the source files related
 to EBPF are part of a p4c back end that uses EBPF, which can be
 Apache-2.0 licensed, or they are control plane source files used for
