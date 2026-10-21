@@ -97,14 +97,13 @@ projects in the p4lang Github organization.
 If there is no existing copyright notice, and you are adding a new
 one, we recommend that you use a single year that is the year the file
 was first developed.  Yes, many projects and companies have other
-policies, but there are good arguments (unfortunately at an article
-linked from [this FAQ
-page](https://reuse.software/faq/#years-copyright) that no longer
-works) for using the year the file was first developed, and leaving it
-that way without updating it later.  Sure, if the file is rewritten
-completely or substantially from scratch, updating the year makes
-sense, but otherwise leaving the copyright year unchanged when
-modifying the file is a legally defensible choice.
+policies, but there are good arguments (see [this FAQ
+page](https://reuse.software/faq/#years-copyright)) for using the year
+the file was first developed, and leaving it that way without updating
+it later.  Sure, if the file is rewritten completely or substantially
+from scratch, updating the year makes sense, but otherwise leaving the
+copyright year unchanged when modifying the file is a legally
+defensible choice.
 
 
 # Determining the license
