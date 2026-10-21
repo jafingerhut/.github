@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 The P4 Language Consortium
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # P4 Project Policy: AI Tool Use in Contributions
 The P4 Project permits the use of AI tools to assist with writing code and documentation. Our approach follows the [Linux Foundation’s Generative AI Guidance](https://www.linuxfoundation.org/legal/generative-ai) and adds organization-specific requirements.
 
