@@ -28,6 +28,10 @@ on:
         required: false
         default: "v{version}"
         type: string
+    secrets:
+      RELEASE_APP_PRIVATE_KEY:
+        description: "Private key of the GitHub App that creates the release PR"
+        required: true
 
 jobs:
   check-new-commits:
@@ -105,12 +109,18 @@ jobs:
           BRANCH="${BRANCH//\{version\}/${{ env.VERSION }}}"
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
 
-      # Creating as 'draft' so a maintainer can trigger CI easily.
-      # See https://github.com/peter-evans/create-pull-request/blob/main/docs/concepts-guidelines.md#triggering-further-workflow-runs
+      - name: Mint a token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.RELEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
+
       - name: Create Pull Request
         id: create_pr
         uses: peter-evans/create-pull-request@v8
         with:
+          token: ${{ steps.app-token.outputs.token }}
           base: main
           add-paths: ${{ inputs.version_file }}
           reviewers: ${{ inputs.reviewers }}
@@ -126,14 +136,13 @@ jobs:
             Auto-generated pull request creating version ${{ env.VERSION }}.
 
             ${{ steps.changelog.outputs.content }}
-          draft: always-true
 
       - name: Add maintainer instructions
         if: steps.create_pr.outputs.pull-request-number != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo -e "Maintainers: Mark this PR as *ready* to trigger CI.\n\nPlease use **Squash and merge** to include the changelog in the release message." | \
+          echo -e "Please use **Squash and merge** to include the changelog in the release message." | \
           gh pr comment "${{ steps.create_pr.outputs.pull-request-number }}" \
             --repo "${{ github.repository }}" \
             --body-file -
