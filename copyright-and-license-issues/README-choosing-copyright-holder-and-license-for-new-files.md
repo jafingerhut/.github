@@ -146,7 +146,7 @@ GPL-2.0-only, primarily for one of the following reasons:
   e.g. C source code intended to be part of an EBPF program.
 
 
-## Other exceptions to using Apache-2.0 - BSD, MIT, and FSFAP licenses
+## Exceptions to using Apache-2.0 - BSD, MIT, and FSFAP licenses
 
 Many libraries are released under BSD-2-Clause, BSD-3-Clause, MIT, or
 FSFAP licenses.  To the best of our knowledge, it is [legally
@@ -156,6 +156,15 @@ Many libraries whose source code has been copied into p4lang
 repositories have one of these licenses.  They are often within a
 directory called `third-party` or `third_party`.
 
+
+## Exceptions to using Apache-2.0 - documentation
+
+P4 documentation should be licensed under the Creative Commons
+Attribution 4.0 International License (SPDX license identifier
+[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)), not
+Apache-2.0.  See the P4 Technical Charter [1], Section 7.b.iv.
+
+[1] https://p4.org/wp-content/uploads/sites/53/2025/07/P4-Project-Technical-Charter-January-31-2024-Final.docx.pdf
 
 
 # Using REUSE to automate the process of adding copyright and license annotations
