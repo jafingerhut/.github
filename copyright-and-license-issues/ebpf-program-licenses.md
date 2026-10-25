@@ -118,6 +118,14 @@ would choose the BSD-2-Clause license).
 SPDX-License-Identifier: GPL-2.0-only or BSD-2-Clause
 ```
 
+For the version of `p4c` repository source code analyzed later in this
+article, this is the complete list of source files that should have
+this license:
+
++ `backends/ebpf/runtime/ebpf_kernel.h`
++ `backends/ebpf/runtime/ebpf_common.h`
++ `backends/tc/runtime/include/pna.h`
+
 
 # What licenses do other projects use for files in category (d)?
 
