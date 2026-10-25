@@ -104,11 +104,13 @@ the file with the BSD-2-Clause license.
 
 # Summary of recommendations for `p4lang` projects
 
-From everything I have learned, using the following dual license for
-all files in category (d) seems to be a choice that gives very clear
-intention that it can be used in a program loaded into the Linux
-kernel, and also in programs of category (b) that have whatever
-license the developer wishes to use.
+From everything described in this article, using the following dual
+license for all files in category (d) for `p4lang` projects seems to
+be a choice that gives very clear intention that it can be used in a
+program loaded into the Linux kernel (where the developer would chose
+the GPL-2.0-only license), and also in programs of category (b) that
+have whatever license the developer wishes to use (where the developer
+would choose the BSD-2-Clause license).
 
 ```
 SPDX-License-Identifier: GPL-2.0-only or BSD-2-Clause
