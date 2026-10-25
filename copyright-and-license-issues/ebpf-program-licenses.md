@@ -102,6 +102,19 @@ programs with a proprietary license, where they would choose to use
 the file with the BSD-2-Clause license.
 
 
+# Summary of recommendations for `p4lang` projects
+
+From everything I have learned, using the following dual license for
+all files in category (d) seems to be a choice that gives very clear
+intention that it can be used in a program loaded into the Linux
+kernel, and also in programs of category (b) that have whatever
+license the developer wishes to use.
+
+```
+SPDX-License-Identifier: GPL-2.0-only or BSD-2-Clause
+```
+
+
 # What licenses do other projects use for files in category (d)?
 
 
@@ -128,6 +141,13 @@ copyright holders, which in some cases is everyone who modified the
 file, and getting such permission can be a difficult and
 time-consuming process, for little or no practical gain, especially if
 the existing license achieves the desired goal.
+
+The same LLM chats suggest that between the choices of `GPL-2.0-only
+OR BSD-2-Clause` versus `LGPL-2.1 OR BSD-2-Clause`, there may be
+potential problems with using `LGPL-2.1` in header files included from
+programs to be loaded into the Linux kernel, and that `GPL-2.0-only`
+is a choice that makes it clearer that such a program can be loaded
+into the Linux kernel.
 
 
 ## `libbpf` version with tag `v1.3.0`
