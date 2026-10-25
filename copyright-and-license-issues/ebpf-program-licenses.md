@@ -58,8 +58,8 @@ systems:
 + (c) C header files that are intended to be included only from files
   of category (a).
 
-+ (d) C header files that are intended to be included either from
-  files of category (a), or from category (b), or both.
++ (d) C header files that are intended to be included from files of
+  category (a) and also from files of category (b).
 
 For category (a), the relevant files are auto-generated as the output
 of the `p4c-ebpf` or `p4c-pna-p4tc` P4 compilers.  These
@@ -74,8 +74,8 @@ While we could try hard to distinguish whether a header file included
 by files in category (a) was in category (c) or (d), i.e. whether
 anyone ever plans to include the header file from a file in category
 (b), it is easier to simply assume that all such header files _might_
-be included from a file in category (b), and thus all such files are
-in category (d).
+be included from a file in category (b), and thus all such included
+files are in category (d).
 
 
 # What licenses are appropriate for each category of source files?
@@ -89,15 +89,15 @@ For files in category (b), we as developers of `p4c` would like to
 enable developers to use any license they wish, e.g. copyleft,
 Apache-2.0, some proprietary license, etc.  Note that licensing files
 in category (d) as GPL-2.0-only would prevent those files from being
-included in category (b) programs, unless they were also licensed
-GPL-2.0-only (and perhaps a short list of closely related copyleft
-licenses).
+included in category (b) programs, unless the category (b) program
+were also licensed GPL-2.0-only (and perhaps a short list of closely
+related copyleft licenses).
 
 A common solution used in this scenario is to make files in category
 (d) have a dual license, e.g. GPL-2.0-only or BSD-2-Clause.  A
 dual-licensed file enables a developer to include the file in programs
 with a GPL-2.0-only license, where they would choose to use the file
-with the GPL-2.0-only choice, and also to include the same file in
+with the GPL-2.0-only license, and also to include the same file in
 programs with a proprietary license, where they would choose to use
 the file with the BSD-2-Clause license.
 
@@ -107,15 +107,14 @@ the file with the BSD-2-Clause license.
 
 ## `bpftool` version with tag `v7.3.0`
 
-This version of `bpftool` has at least one `.c` file with each of the
-dual licenses listed below:
+Among `bpftool`'s `.c` files with a dual license, they all use one of
+the following:
 
 + `GPL-2.0-only OR BSD-2-Clause`
 + `LGPL-2.1 OR BSD-2-Clause`
 + `GPL-2.0-or-later OR BSD-2-Clause`
 
-It has at least one `.h` file with each of the dual licenses listed
-below:
+All of its `.h` files with a dual license use this:
 
 + `GPL-2.0-only OR BSD-2-Clause`
 
@@ -133,11 +132,12 @@ the existing license achieves the desired goal.
 
 ## `libbpf` version with tag `v1.3.0`
 
-`.c` files:
+All `.c` files with a dual license use this:
 
 + `LGPL-2.1 OR BSD-2-Clause`
 
-`.h` source files:
+Of `libbpf`'s `.h` files with a dual license, they all use one of the
+following:
 
 + `LGPL-2.1 OR BSD-2-Clause`
 + `((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)`
